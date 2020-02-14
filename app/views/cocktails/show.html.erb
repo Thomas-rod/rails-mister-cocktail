@@ -8,8 +8,8 @@
   <% end %>
 
   <% if @cocktail.photo.attached? %>
-  <%= cl_image_tag(@cocktail.photo.key,
-      width: 400, height: 300, crop: :fill) %>
+  <%= cl_image_tag @cocktail.photo.key,
+      width: 400, height: 300, crop: :fill %>
     <% end %>
 
   <%= link_to "Go back to cocktail's list", cocktails_path %>
